@@ -1,4 +1,1 @@
-strs = "werw"
-
-strs = ''.join(sorted(strs))
-print(strs)
+print("1".isalnum())
