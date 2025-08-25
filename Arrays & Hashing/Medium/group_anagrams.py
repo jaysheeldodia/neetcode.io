@@ -6,14 +6,19 @@ class Solution:
         hm = {}
 
         for i in strs:
-            key = ''.join(sorted(strs))
+            key = ''.join(sorted(i))
             
             if key not in hm:
                 hm[key] = [i]
             else:
                 hm[key].append(i)
 
-        return hm
+
+        final = []
+
+        for v in hm.values():
+            final.append(v)
+        return final
 
 print(Solution().groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"]))
 print(Solution().groupAnagrams(strs = [""]))
